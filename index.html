@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>John Vincent Bardilas - Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of John Vincent Bardilas, a BS Computer Science student at Caraga State University.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Press+Start+2P&family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="logo-removebg-preview.png" alt="Portfolio Logo" id="logo">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#skills">Skills/Hobbies</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="main" id="home">
+        <img src="bards.jpg" alt="John Vincent Bardilas" id="bards">
+        <h1 id="name">John Vincent Bardilas</h1>
+        <p id="bio">I'm a BS in Computer Science Freshman studying at Caraga State University - Main Campus</p>
+    </main>
+    
+    <section id="project" class="section">
+        <h2>Projects</h2>
+        <div class="project-item">
+            <h3>Personal Portfolio Website</h3>
+            <p>A responsive website showcasing my skills and projects, built with HTML, CSS, and JavaScript.</p>
+            <a href="#" target="_blank">View Project</a>
+        </div>
+    </section>
+    
+    <section id="skills" class="section">
+        <h2>Skills & Hobbies</h2>
+        <div class="skills-hobbies">
+            <div class="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>Programming: C, HTML/CSS</li>
+                    <li>Web Development: Basic Static Web</li>
+                    <li>Tools: Git, VS Code</li>
+                </ul>
+            </div>
+            <div class="hobbies">
+                <h3>Hobbies</h3>
+                <ul>
+                    <li>Gaming: Enjoy playing strategy and RPG games like Civilization and The Witcher.</li>
+                    <li>Reading: Love sci-fi novels and tech blogs.</li>
+                    <li>Sports: Basketball and hiking in nature.</li>
+                    <li>Music: Listening to electronic and indie rock.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out for collaborations or inquiries!</p>
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="contact-info">
+            <p>Email: johnvincent.bardilas@carsu.edu</p>
+            <p>Phone: +63 123 456 7890</p>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <p>&copy; 2023 John Vincent Bardilas. All rights reserved.</p>
+        <nav>
+            <a href="#home">Home</a> | 
+            <a href="#project">Projects</a> | 
+            <a href="#skills">Skills/Hobbies</a> | 
+            <a href="#contact">Contact</a>
+        </nav>
+    </footer>
+</body>
+</html>
