@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: whitesmoke;
+}
+
+/* Body and general styles */
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5px 5%;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    /* Fallback */
+    display: -webkit-box;
+    -webkit-box-pack: justify;
+}
+
+.navbar a:hover {
+    color: rgb(158, 12, 12);
+    border-bottom: 2px solid rgb(158, 12, 12);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    background: transparent;
+}
+
+ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: "BBH Bartle", sans-serif;
+    font-size: x-small;
+    font-weight: 200;
+    transition: 0.3s ease;
+    background: transparent;
+    /* Prefix for older browsers */
+    -webkit-transition: 0.3s ease;
+}
+
+/* Logo */
+#logo {
+    width: 150px;
+    height: auto;
+    border: none;
+    background: transparent;
+    object-fit: contain;
+}
+
+/* Main/Home section */
+.main {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 100px; /* Account for fixed navbar */
+    /* Fallback */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+
+#bards {
+    width: 300px;
+    height: auto;
+    border: 2px inset whitesmoke;
+    border-radius: 50px;
+    animation: glow 2s infinite;
+    /* Prefixes */
+    -webkit-animation: glow 2s infinite;
+}
+
+@keyframes glow {
+    50% { box-shadow: 0 0 50px hsla(307, 100%, 50%, 0.77); }
+}
+@-webkit-keyframes glow {
+    50% { -webkit-box-shadow: 0 0 50px hsla(307, 100%, 50%, 0.77); }
+}
+
+#name {
+    border: 2px solid whitesmoke;
+    border-left: solid;
+    border-right: solid;
+    padding: 15px;
+    font-weight: 900;
+    font-size: medium;
+    color: whitesmoke;
+    margin: 30px 0;
+    text-align: center;
+    background: transparent;
+    max-width: 90%;
+    font-family: "Press Start 2P", system-ui;
+}
+
+#bio {
+    border: 2px solid whitesmoke;
+    border-left: solid;
+    border-right: solid;
+    padding: 15px;
+    font-weight: 900;
+    color: whitesmoke;
+    margin: 8px 0;
+    text-align: center;
+    background: transparent;
+    max-width: 90%;
+    font-family: "Quattrocento", system-ui;
+}
+
+/* Section styles (for Project, Skills, Contact) */
+.section {
+    padding: 50px 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: whitesmoke;
+    font-family: "Press Start 2P", system-ui;
+}
+
+/* Project section */
+.project-item {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    background: none;
+    font-family: "Quattrocento", sans-serif;
+}
+
+.project-item h3 {
+    margin-bottom: 10px;
+}
+
+.project-item a {
+    color: rgb(158, 12, 12);
+    text-decoration: none;
+}
+
+.project-item a:hover {
+    text-decoration: underline;
+}
+
+/* Skills/Hobbies section */
+.skills-hobbies {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-family: "Quattrocento", sans-serif;
+}
+
+.skills, .hobbies {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+    background: none;
+}
+
+.skills h3, .hobbies h3 {
+    margin-bottom: 15px;
+}
+
+.skills ul, .hobbies ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+/* Contact section */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    font-family: "Quattrocento", sans-serif;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    background: transparent;
+    color: whitesmoke;
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background: rgb(158, 12, 12);
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.contact-form button:hover {
+    background: rgb(200, 12, 12);
+}
+
+.contact-info {
+    text-align: center;
+    font-family: "Quattrocento", sans-serif;
+}
+
+.contact-info a {
+    color: rgb(158, 12, 12);
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    margin-top: 50px;
+    font-family: "BBH Bartle", sans-serif;
+    font-weight: 100;
+    font-size: x-small;
+}
+
+.footer nav a {
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer nav a:hover {
+    color: rgb(158, 12, 12);
+    transition: 0.3s ease;
+    border-bottom: solid;
+}
+
+/* Media Queries for Responsiveness */
+/* Tablet (up to 1023px) */
+@media (max-width: 1023px) {
+    .navbar {
+        padding: 10px 2%;
+    }
+    ul {
+        gap: 15px;
+    }
+    ul li a {
+        font-size: 16px;
+    }
+    #bards {
+        width: 250px;
+    }
+    #logo {
+        width: 120px;
+    }
+    #name, #bio {
+        padding: 10px;
+        margin: 20px 0;
+    }
+    .section {
+        padding: 40px 2%;
+    }
+    .skills-hobbies {
+        flex-direction: column;
+    }
+    .contact-form {
+        max-width: 100%;
+    }
+}
+
+/* Mobile (up to 767px) */
+@media (max-width: 767px) {
+    .main {
+        padding: 0 2%;
+        padding-top: 120px; /* More space for navbar */
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 5px 2%;
+    }
+    ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 5px;
+    }
+    ul li a {
+        font-size: 14px;
+    }
+    #bards {
+        width: 200px;
+    }
+    #logo {
+        width: 100px;
+    }
+    #name, #bio {
+        padding: 8px;
+        margin: 15px 0;
+        font-size: 14px;
+    }
+    .section {
+        padding: 30px 2%;
+    }
+    .section h2 {
+        font-size: 1.5rem;
+    }
+    .project-item {
+        padding: 15px;
+    }
+    .skills, .hobbies {
+        padding: 15px;
+    }
+    .contact-form input, .contact-form textarea {
+        padding: 8px;
+    }
+    .footer nav {
+        display: block;
+    }
+    .footer nav a {
+        display: block;
+        margin: 5px 0;
+    }
+}
